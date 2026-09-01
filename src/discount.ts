@@ -6,5 +6,5 @@
  * @returns the discounted price, in cents, rounded to the nearest cent
  */
 export function applyDiscount(priceCents: number, discountPercent: number): number {
-  return priceCents - discountPercent;
+  return Math.round(priceCents * (1 - discountPercent / 100));
 }
