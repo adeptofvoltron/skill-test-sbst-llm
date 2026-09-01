@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "baseBranch": "main",
+  "tracker": "github",
+  "validation": {
+    "commands": [
+      "npm run typecheck",
+      "npm test"
+    ]
+  },
+  "labels": {
+    "enabled": false,
+    "pipeline": ["review", "changes-requested", "qa", "qa-failed", "merge-queue", "blocked", "do-not-merge"],
+    "category": ["bug", "feature", "refactor"],
+    "meta": ["needs-qa", "skip-qa", "qa-approved", "qa-self-verified", "in-progress"],
+    "priority": ["priority-low", "priority-medium", "priority-high"],
+    "risk": ["risk-low", "risk-medium", "risk-high"]
+  },
+  "qaGate": false,
+  "paths": {
+    "runs": ".ai/runs",
+    "analysis": ".ai/analysis",
+    "specs": ".ai/specs",
+    "scripts": ".ai/scripts",
+    "qa": ".ai/qa"
+  },
+  "sbst": null
+}
