@@ -24,5 +24,8 @@
     "scripts": ".ai/scripts",
     "qa": ".ai/qa"
   },
-  "sbst": null
+  "sbst": {
+    "enabled": true,
+    "commands": ["npx tsx .ai/scripts/sbst-discount.mjs"]
+  }
 }
